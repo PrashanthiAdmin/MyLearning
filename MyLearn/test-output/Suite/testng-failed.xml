@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.fpix.tests.Lern.LoginScenario">
+        <methods>
+          <include name="initDriver"/>
+          <include name="login"/>
+          <include name="endreport"/>
+          <include name="init"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.fpix.tests.Lern.LoginScenario -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
