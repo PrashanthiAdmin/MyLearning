@@ -24,19 +24,24 @@ public class LoginScenario extends BusinessFunctions{
 
 	@Test(dataProviderClass = TestUtilities.class, dataProvider = "dp")
 	public void login(String firstName, String LastName, String password, String email) throws Throwable{
-		
-		
-if(!(TestUtilities.isTestRunnable("openAccountTest", excel))){
-			
+
+
+		if(!(TestUtilities.isTestRunnable("openAccountTest", excel))){
+
 			throw new SkipException("Skipping the test "+"openAccountTest".toUpperCase()+ "as the Run mode is NO");
 		}
 		log.debug("Login Test 123 by bob");
 
 
 		log.debug("Login Test");
-
 		system.out.println("changes in code");
 		log.debug("Login Test 256");
+		system.out.println("changes in code");
+		log.debug("Login Test1");
+		system.out.println("changes in code by bob");
+		
+log.debug("Login Test1");
+>>>>>>> change by bob1
 		driver.findElement(By.xpath(OR.getProperty("txtPhoneNumber"))).clear();
 		type("txtPhoneNumber", "8765432121");
 		click("btnProceed");
