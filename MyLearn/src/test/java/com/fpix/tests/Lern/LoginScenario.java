@@ -36,7 +36,7 @@ if(!(TestUtilities.isTestRunnable("openAccountTest", excel))){
 		log.debug("Login Test");
 
 		system.out.println("changes in code");
-		log.debug("Login Test 256 + 345");
+		log.debug("Login Test 256");
 		driver.findElement(By.xpath(OR.getProperty("txtPhoneNumber"))).clear();
 		type("txtPhoneNumber", "8765432121");
 		click("btnProceed");
