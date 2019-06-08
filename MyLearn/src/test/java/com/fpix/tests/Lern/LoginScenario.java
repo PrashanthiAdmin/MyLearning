@@ -30,12 +30,10 @@ if(!(TestUtilities.isTestRunnable("openAccountTest", excel))){
 			
 			throw new SkipException("Skipping the test "+"openAccountTest".toUpperCase()+ "as the Run mode is NO");
 		}
-<<<<<<< HEAD
+
 		log.debug("Login Test");
 		system.out.println("changes in code");
-=======
 		log.debug("Login Test1");
->>>>>>> changes in login
 		driver.findElement(By.xpath(OR.getProperty("txtPhoneNumber"))).clear();
 		type("txtPhoneNumber", "8765432121");
 		click("btnProceed");
